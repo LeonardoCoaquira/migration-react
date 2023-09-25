@@ -1,0 +1,15 @@
+.social-links {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background-color: transparent;
+    padding-left: 1.25rem;
+    text-align: right;
+    height: 4rem;
+}
