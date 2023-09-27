@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { IntlProvider, FormattedMessage } from 'react-intl';
 import './App.css';
 import LanguageSwitcher from './components/LanguageSwitcher';
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 import enMessages from './locales/en.json';
 import esMessages from './locales/es.json';
@@ -21,18 +21,18 @@ function App() {
   return (
     <IntlProvider locale={locale} messages={messages}>
       <div className="App">
-        <Header />
-        <header className="App-header">
-          <LanguageSwitcher toggleLanguage={toggleLanguage} />
+        <LanguageSwitcher toggleLanguage={toggleLanguage} />
+        <Header locale={locale} />
+        <footer className="App-header">
           <h1>
             <FormattedMessage id="hello" />!
           </h1>
           <p>
             <FormattedMessage id="welcomeMessage" />
           </p>
-        </header>
-        <Footer />
+        </footer>
       </div>
+      <Footer />
     </IntlProvider>
   );
 }

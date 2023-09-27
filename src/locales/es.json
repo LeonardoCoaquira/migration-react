@@ -1,5 +1,13 @@
 {
     "hello": "Hola",
-    "welcomeMessage": "¡Bienvenido a nuestro sitio web!"
+    "welcomeMessage": "¡Bienvenido a nuestro sitio web!",
+    "collections" : "Colecciones",
+    "inspiration" : "Inspiración",
+    "andinaLabs" : "Andina Labs",
+    "origins" : "Origins",
+    "aboutUs" : "Nosotros",
+    "theAlpaca" : "La Alpaca",
+    "socialResponsibility" : "Responsabilidad Social",
+    "contactUs" : "Contactanos",
+    "blog" : "Blog"
 }
-  

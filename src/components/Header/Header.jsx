@@ -1,24 +1,54 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import logo from '../../assets/logo.svg';
 import '../../styles/Header/Header.css';
 
 function Header() {
+
   return (
-    <header className="header">
-      <div className="logo">
-        <a href="/">
-        <img src={logo} alt="Logo de la aplicación" /></a>
-      </div>
-      <nav className="nav">
-        <ul>
-          <li><a href="/productos">Colecciones</a></li>
-          <li><a href="/productos">Inspiración</a></li>
-          <li><a href="/productos">Andila Labs</a></li>
-          <li><a href="/productos">Origins</a></li>
-        </ul>
-      </nav>
-    </header>
-    
+      <header className="header">
+        <div className="logo">
+          <a href="/">
+            <img src={logo} alt="Logo de la aplicación" />
+          </a>
+        </div>
+        <nav className="primary menu">
+          <ul>
+            <li>
+              <FormattedMessage id="collections" />
+            </li>
+            <li>
+              <FormattedMessage id="inspiration" />
+            </li>
+            <li>
+              <FormattedMessage id="andinaLabs" />
+            </li>
+            <li>
+              <FormattedMessage id="origins" />
+            </li>
+          </ul>
+        </nav>
+
+        <nav className="secondary menu">
+          <ul>
+            <li>
+              <FormattedMessage id="aboutUs" />
+            </li>
+            <li>
+              <FormattedMessage id="theAlpaca" />
+            </li>
+            <li>
+              <FormattedMessage id="socialResponsibility" />
+            </li>
+            <li>
+              <FormattedMessage id="contactUs" />
+            </li>
+            <li>
+              <FormattedMessage id="blog" />
+            </li>
+          </ul>
+        </nav>
+      </header>
   );
 }
 

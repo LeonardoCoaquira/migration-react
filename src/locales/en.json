@@ -1,5 +1,13 @@
 {
     "hello": "Hello",
     "welcomeMessage": "Welcome to our website!",
-    "collections" : "Collections"
+    "collections" : "Collections",
+    "inspiration" : "Inspiration",
+    "andinaLabs" : "Andina Labs",
+    "origins" : "Origins",
+    "aboutUs" : "About Us",
+    "theAlpaca" : "The Alpaca",
+    "socialResponsibility" : "Social Responsability",
+    "contactUs" : "Contact Us",
+    "blog" : "Blog"
 }
