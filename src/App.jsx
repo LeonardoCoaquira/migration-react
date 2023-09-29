@@ -21,8 +21,10 @@ function App() {
   return (
     <IntlProvider locale={locale} messages={messages}>
       <div className="App">
-        <LanguageSwitcher toggleLanguage={toggleLanguage} />
-        <Header locale={locale} />
+        <div className="navigation">
+          <Header locale={locale} />
+          <LanguageSwitcher toggleLanguage={toggleLanguage} />
+        </div>
         <footer className="App-header">
           <h1>
             <FormattedMessage id="hello" />!

@@ -1,9 +1,13 @@
 import React from 'react';
 
 function LanguageSwitcher({ toggleLanguage }) {
+  const handleClick = (e) => {
+    e.preventDefault();
+    toggleLanguage();
+  };
   return (
     <div className="language-switcher">
-      <button onClick={toggleLanguage}>Toggle Language</button>
+      <button onClick={handleClick}>Toggle Language</button>
     </div>
   );
 }

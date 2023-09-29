@@ -6,7 +6,7 @@ import '../../styles/Header/Header.css';
 function Header() {
 
   return (
-      <header className="header">
+      <div className="header">
         <div className="logo">
           <a href="/">
             <img src={logo} alt="Logo de la aplicación" />
@@ -48,7 +48,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-      </header>
+      </div>
   );
 }
 
